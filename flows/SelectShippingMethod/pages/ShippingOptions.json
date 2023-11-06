@@ -1,0 +1,33 @@
+{
+  "name": "d719def1-6dc6-4cf5-a5dc-b2a0a0a0bedf",
+  "displayName": "ShippingOptions",
+  "form": {
+    "parameters": [ {
+      "displayName": "shippingmethod",
+      "required": true,
+      "entityType": "@shippingmethod",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Por favor, selecione uma das opções de transportadora." ]
+            },
+            "languageCode": "pt-br"
+          } ]
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "webhook": "gcloud_webhook_default",
+    "tag": "get-new-shipping-options"
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "ShippingConfirmation",
+    "name": "565c42be-c490-492c-a388-9586d8dc164a"
+  } ]
+}

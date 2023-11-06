@@ -1,0 +1,6 @@
+{
+  "name": "85f9d9cb-8089-4106-ab8e-3e8ec88d071c",
+  "displayName": "order.place.product.assist",
+  "priority": 500000,
+  "numTrainingPhrases": 5
+}

@@ -1,0 +1,41 @@
+{
+  "name": "5c7daa01-2cec-4e7d-a439-173e034eacc0",
+  "displayName": "ProductAdded",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Produto adicionado ao seu carrinho com sucesso!", "Perfeito, adicionei o produto ao seu carrinho.", "Beleza, já coloquei em seu carrinho" ]
+      },
+      "languageCode": "pt-br"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "itemnumber",
+        "value": null
+      }, {
+        "parameter": "productname",
+        "value": null
+      }, {
+        "parameter": "productrate",
+        "value": null
+      }, {
+        "parameter": "productamount",
+        "value": null
+      }, {
+        "parameter": "quantity",
+        "value": null
+      }, {
+        "parameter": "product_options",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "00c3f35f-7683-411f-8938-cf02be7e3662"
+  } ]
+}

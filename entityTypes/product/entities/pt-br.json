@@ -1,0 +1,659 @@
+{
+  "entities": [ {
+    "value": "5 HTP",
+    "synonyms": [ "5 HTP", "5htp" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "AAKG",
+    "synonyms": [ "AAKG" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Absorve+",
+    "synonyms": [ "absorve", "absorve mais", "Absorve+" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Açaí",
+    "synonyms": [ "acai", "Açaí", "assai" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Acetil L-Carnitina",
+    "synonyms": [ "Acetil L-Carnitina", "carnitina" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Ácido Araquidônico",
+    "synonyms": [ "Ácido Araquidônico" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Ácido D-aspártico",
+    "synonyms": [ "Ácido D-aspártico" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Ácido Hialurônico",
+    "synonyms": [ "acido hialuronico", "Ácido Hialurônico" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Ácido Lipóico",
+    "synonyms": [ "Ácido Alfa Lipóico", "Ácido Lipóico" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Ácido Málico",
+    "synonyms": [ "Ácido Málico" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Ácido Mandélico",
+    "synonyms": [ "Ácido Mandélico" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Ácido Tranexâmico",
+    "synonyms": [ "Ácido Tranexâmico" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Actigym",
+    "synonyms": [ "Actigym" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Actrisave",
+    "synonyms": [ "Actrisave" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "AcZero",
+    "synonyms": [ "acne zero", "acnezero", "AcZero" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Agar Agar",
+    "synonyms": [ "Agar Agar" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Água Micelar",
+    "synonyms": [ "Água Micelar" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Água Thermal",
+    "synonyms": [ "agua terma", "água termal", "agua térmica", "Água Thermal" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Alcachofra",
+    "synonyms": [ "Alcachofra" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Álcool em Gel",
+    "synonyms": [ "Álcool em Gel" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Alfa GPC",
+    "synonyms": [ "Alfa GPC" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Allyl ABG",
+    "synonyms": [ "Allyl ABG" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Alprostadil",
+    "synonyms": [ "Alprostadil" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Altilix",
+    "synonyms": [ "altilis", "Altilix" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Amora Negra",
+    "synonyms": [ "amora", "Amora Negra" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Anti Ansiedade",
+    "synonyms": [ "Anti Ansiedade", "Antiansiedade" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "AntiOxxy",
+    "synonyms": [ "antioxi", "AntiOxxy", "antioxy" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "AOX Bomb",
+    "synonyms": [ "AOX Bomb" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Apetite Control",
+    "synonyms": [ "Apetite Control" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Apetite Max",
+    "synonyms": [ "Apetite Max" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Apetite Redux",
+    "synonyms": [ "Apetite Redux" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Articula ON",
+    "synonyms": [ "Articula ON" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Articulare",
+    "synonyms": [ "Articulare" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "ArticuleMAX",
+    "synonyms": [ "articule", "ArticuleMAX" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Ascorbosilane C",
+    "synonyms": [ "Ascorbosilane", "Ascorbosilane C" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Ashwagandha",
+    "synonyms": [ "ashuaganda", "Ashwagandha" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Astaxantina",
+    "synonyms": [ "Astaxantina" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Astragalus",
+    "synonyms": [ "Astragalus" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Autopreenchimento Cutâneo",
+    "synonyms": [ "Autopreenchimento Cutâneo" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Avosoy",
+    "synonyms": [ "Avosoy" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Ayslim",
+    "synonyms": [ "Ayslim" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "B2cool",
+    "synonyms": [ "B2cool" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Bacopa monneri",
+    "synonyms": [ "bacopa", "Bacopa monneri", "bacopamoneri" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Balm",
+    "synonyms": [ "Balm" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Banho Seco",
+    "synonyms": [ "Banho Seco" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Beanblock",
+    "synonyms": [ "Beanblock" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Beautifeye",
+    "synonyms": [ "Beautifeye" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Beauty Fitness",
+    "synonyms": [ "Beauty Fitness" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Berinjela",
+    "synonyms": [ "Berinjela" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Beta Glucan",
+    "synonyms": [ "Beta Glucan" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Beta-alanina",
+    "synonyms": [ "beta alanina", "Beta-alanina", "betaalanina" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Betacaroteno",
+    "synonyms": [ "Betacaroteno" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Betaína HCL",
+    "synonyms": [ "betaina", "Betaína HCL" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "BIO ATP",
+    "synonyms": [ "BIO ATP" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Bio-Arct ",
+    "synonyms": [ "Bio-Arct " ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "BioBlanc",
+    "synonyms": [ "BioBlanc" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Bioflavonóides",
+    "synonyms": [ "Bioflavonóides", "flavonoide", "flavonoides" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "BIOintestil",
+    "synonyms": [ "BIOintestil" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "BioMamps",
+    "synonyms": [ "BioMamps" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Biosil",
+    "synonyms": [ "Biosil" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Bioskin up Contour",
+    "synonyms": [ "Bioskin up Contour" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Biossome DMAE",
+    "synonyms": [ "Biossome DMAE" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Biotina",
+    "synonyms": [ "Biotina" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Bisoprolol",
+    "synonyms": [ "Bisoprolol" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Bitter Melon",
+    "synonyms": [ " Melão de São Caetano", "Bitter Melon", "melao", "melão" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "BodyBalance",
+    "synonyms": [ "BodyBalance" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Boldo",
+    "synonyms": [ "Boldo" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Boswellia",
+    "synonyms": [ "Boswellia" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Bowell",
+    "synonyms": [ "Bowell" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Brocolinol",
+    "synonyms": [ "Brocolinol" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Bronze perfeito",
+    "synonyms": [ "Bronze perfeito", "bronzeado perfeito" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Bulbine Natalensis",
+    "synonyms": [ "Bulbine Natalensis" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Bulk UP",
+    "synonyms": [ "Bulk UP" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cacti-Cell",
+    "synonyms": [ "Cacti-Cell" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "CactiDry",
+    "synonyms": [ "CactiDry" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "CactiRedux",
+    "synonyms": [ "CactiRedux" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "CactiX",
+    "synonyms": [ "cacti-nea", "cactin", "cactinea", "CactiX" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Café Verde",
+    "synonyms": [ " Green Coffee", "Café Verde" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cafeína",
+    "synonyms": [ "Cafeína" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cálcio",
+    "synonyms": [ "Cálcio", "Cálcio D-Glucarate" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Calm Lips",
+    "synonyms": [ "Calm Lips" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Capsiate",
+    "synonyms": [ "Capsiate" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cápsula para Combater o Mau Hálito",
+    "synonyms": [ "Cápsula para Combater o Mau Hálito" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cápsulas Antienvelhecimento",
+    "synonyms": [ "Cápsulas Antienvelhecimento" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cápsulas Auxiliares no Tratamento de Microvasos",
+    "synonyms": [ "Cápsulas Auxiliares no Tratamento de Microvasos", "Microvasos" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cápsulas Clareadoras",
+    "synonyms": [ "Cápsulas Clareadoras" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cápsulas de Combate de Manchas na Pele",
+    "synonyms": [ "Cápsulas de Combate de Manchas na Pele" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cápsulas para Combate de Varicoses e Celulite",
+    "synonyms": [ "Cápsulas para Combate de Varicoses e Celulite", "Varicoses " ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cápsulas para Combater a Queda Capilar",
+    "synonyms": [ "Cápsulas para Combater a Queda Capilar" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cápsulas Redutoras da Acne",
+    "synonyms": [ "Cápsulas Redutoras da Acne" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cápsulas Redutoras de Flacidez",
+    "synonyms": [ "Cápsulas Redutoras de Flacidez" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cápsulas Redutoras de Gordura Localizada",
+    "synonyms": [ "Cápsulas Redutoras de Gordura Localizada" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cardiolife",
+    "synonyms": [ "Cardiolife" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "CardioShield",
+    "synonyms": [ "CardioShield" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Carnitina",
+    "synonyms": [ "Carnitina" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Carqueja",
+    "synonyms": [ "Carqueja" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cartidyss",
+    "synonyms": [ "Cartidyss" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cáscara Sagrada",
+    "synonyms": [ "Cáscara Sagrada" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Casiolamina",
+    "synonyms": [ "Casiolamina" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Castanha da Índia",
+    "synonyms": [ "Castanha da Índia" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Catalase",
+    "synonyms": [ "Catalase" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cavalinha",
+    "synonyms": [ "Cavalinha" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Caviar",
+    "synonyms": [ "Caviar" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cerasomosides",
+    "synonyms": [ "Cerasomosides" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Chá Verde",
+    "synonyms": [ "Chá Verde" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Champorus",
+    "synonyms": [ "Champorus" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Chitosan",
+    "synonyms": [ "Chitosan" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Chlorella",
+    "synonyms": [ "Chlorella" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Chronic",
+    "synonyms": [ "Chronic" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cicatrimax",
+    "synonyms": [ "Cicatrimax" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cimicífuga",
+    "synonyms": [ "Cimicífuga" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cindura",
+    "synonyms": [ "Cindura" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cissus quadrangularis",
+    "synonyms": [ "Cissus quadrangularis" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Citrimax",
+    "synonyms": [ "Citrimax" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Citrus Aurantium",
+    "synonyms": [ "Citrus Aurantium" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Citrus Power",
+    "synonyms": [ "Citrus Power" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "CitrusiM",
+    "synonyms": [ "CitrusiM" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Clarify",
+    "synonyms": [ "Clarify" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Clock",
+    "synonyms": [ "Clock" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cloreto de Magnésio",
+    "synonyms": [ "Cloreto de Magnésio" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cloveol",
+    "synonyms": [ "Cloveol" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cobamamida",
+    "synonyms": [ "Cobamamida" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Coenzima Q10",
+    "synonyms": [ "coenzima", "Coenzima Q10", "q10" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cognigrape",
+    "synonyms": [ "Cognigrape" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cognimax",
+    "synonyms": [ "Cognimax" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Colágeno",
+    "synonyms": [ "Colágeno", "Colágeno Hidrolisado" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Colateral Redux",
+    "synonyms": [ "Colateral Redux" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Colesterol Adjust",
+    "synonyms": [ "Colesterol Adjust" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Coleus Forskohlii",
+    "synonyms": [ "Coleus Forskohlii" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Colina",
+    "synonyms": [ "Colina" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Combate Cansaço",
+    "synonyms": [ "Cápsulas para Combater Cansaço Físico e Mental", "Combate Cansaço", "combater cansaço" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Commipheroline",
+    "synonyms": [ "Commipheroline" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Composto Circulação e Varizes",
+    "synonyms": [ "Composto Circulação e Varizes" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Composto Drenante",
+    "synonyms": [ "Composto Drenante" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Composto Termogênico",
+    "synonyms": [ "Composto Termogênico" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Condicionador",
+    "synonyms": [ "Condicionador" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Coquetel Afrodisíaco",
+    "synonyms": [ "Coquetel Afrodisíaco" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cordia Ecalyculata Vell",
+    "synonyms": [ "Cordia Ecalyculata Vell" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cordyceps Sinensis",
+    "synonyms": [ "Cordyceps sinensis" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Corebiome",
+    "synonyms": [ "Corebiome" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cranberry",
+    "synonyms": [ "Cranberry", "Cranberry Extrato Seco" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Creatina",
+    "synonyms": [ "Creatina", "Creatina Monohidratada" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Creme Hidratante",
+    "synonyms": [ "Creme Hidratante", "Creme Hidratante com Ozônio", "Creme Hidratante Cupuaçu e Murumuru" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Creme Homeopático",
+    "synonyms": [ "Creme Homeopático" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Creme Lipopreenchedor",
+    "synonyms": [ "Creme Lipopreenchedor" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Crisina",
+    "synonyms": [ "Crisina" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "CT-2 Colágeno Não Desnaturado do Tipo II",
+    "synonyms": [ "CT-2 Colágeno Não Desnaturado do Tipo II" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cúrcuma Longa",
+    "synonyms": [ "Cúrcuma Longa" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cureit",
+    "synonyms": [ "Cureit" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cyanotis Vaga",
+    "synonyms": [ "Cyanotis Vaga" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cysteamine",
+    "synonyms": [ "Cysteamine" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Damiana",
+    "synonyms": [ "Damiana", "Turnera difusa" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Damilib",
+    "synonyms": [ "Damilib" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Minoxidil",
+    "synonyms": [ "minoquisidil", "minoquisil", "Minoxidil", "minoxidiu" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Minoxihard",
+    "synonyms": [ "minoquisihard", "minoxi hard", "Minoxihard", "minoxiharde" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Morosil",
+    "synonyms": [ "laranja moro", "Morosil" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Ômega",
+    "synonyms": [ "omeforte", "Ômega", "ômega 3", "omegafor" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Testo Booster",
+    "synonyms": [ "booster", "Booster de Testosterona", "Testo Booster" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Testo Extreme",
+    "synonyms": [ "Testo Extreme", "testo extremo" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Vitamina",
+    "synonyms": [ "complexo vitamínico", "Vitamina" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Diet Control",
+    "synonyms": [ "Diet Control" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Digere Bem",
+    "synonyms": [ "Digere Bem" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Diglothin",
+    "synonyms": [ "Diglothin" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Dimpless",
+    "synonyms": [ "Dimpless" ],
+    "languageCode": "pt-br"
+  } ]
+}

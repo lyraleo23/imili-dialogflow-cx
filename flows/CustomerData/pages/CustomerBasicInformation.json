@@ -1,0 +1,85 @@
+{
+  "name": "17a31974-ae50-42c0-ac37-23b52a774a08",
+  "displayName": "CustomerBasicInformation",
+  "form": {
+    "parameters": [ {
+      "displayName": "firstname",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Agora me informe apenas o seu primeiro nome." ]
+            },
+            "languageCode": "pt-br"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "lastname",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "E agora o seu sobrenome." ]
+            },
+            "languageCode": "pt-br"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "phone",
+      "required": true,
+      "entityType": "@sys.phone-number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Telefone de contato?" ]
+            },
+            "languageCode": "pt-br"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "email",
+      "required": true,
+      "entityType": "@sys.email",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "E por último, qual o seu e-mail?" ]
+            },
+            "languageCode": "pt-br"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+      "webhook": "gcloud_webhook_default",
+      "tag": "create-customer",
+      "setParameterActions": [ {
+        "parameter": "firstname",
+        "value": null
+      }, {
+        "parameter": "lastname",
+        "value": null
+      }, {
+        "parameter": "phone",
+        "value": null
+      }, {
+        "parameter": "email",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "5dca7e3d-53c1-44f8-9492-80d409d8df63"
+  } ]
+}

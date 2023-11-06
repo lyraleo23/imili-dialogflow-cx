@@ -1,0 +1,74 @@
+{
+  "name": "f7260bf1-f1ab-421a-a2be-52b508a80037",
+  "displayName": "RepetitionOrderConfirmation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+      "webhook": "gcloud_webhook_draft",
+      "tag": "address-confirmation"
+    },
+    "targetPage": "AddressConfirmation",
+    "name": "00d8f4c7-5e5c-4f37-ae08-1154bbf1032c"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "OrderChanges",
+    "name": "cca5d109-f77d-474a-a860-dc1f5b5b70e8"
+  }, {
+    "intent": "order.change.removeproduct",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "RemoveProduct",
+    "name": "68f9036a-3344-4bc5-bce7-571bc04f03a9"
+  }, {
+    "intent": "order.change.ordernumber",
+    "triggerFulfillment": {
+      "webhook": "gcloud_webhook_draft",
+      "tag": "select-new-order",
+      "setParameterActions": [ {
+        "parameter": "ordernumber",
+        "value": null
+      } ]
+    },
+    "targetPage": "SelectOrder",
+    "name": "82391c88-97c3-47b4-8097-87a79c245684"
+  }, {
+    "intent": "cs.restart",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, vamos recomeçar!" ]
+        },
+        "languageCode": "pt-br"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "cpf",
+        "value": null
+      }, {
+        "parameter": "ordernumber",
+        "value": null
+      } ]
+    },
+    "targetPage": "END_FLOW_WITH_CANCELLATION",
+    "name": "27716689-6121-4006-a47d-6d74026a3d7b"
+  }, {
+    "condition": "$session.params.ordernumber = null",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "item-obj",
+        "value": null
+      } ]
+    },
+    "targetPage": "SelectOrder",
+    "name": "8f2fb330-750f-4641-ac40-a319a988c676"
+  } ]
+}

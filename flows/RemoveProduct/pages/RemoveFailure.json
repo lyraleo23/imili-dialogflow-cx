@@ -1,0 +1,31 @@
+{
+  "name": "66fcdc12-2166-42ff-87c7-1cf8f2f66603",
+  "displayName": "RemoveFailure",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "gcloud_webhook_draft",
+    "tag": "remove-product-failure"
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, vamos manter seu pedido como está. Podemos seguir?" ]
+        },
+        "languageCode": "pt-br"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "itemnumber",
+        "value": null
+      }, {
+        "parameter": "itemquantity",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "3b3ec6af-efe8-4ccd-91ed-6c7e41b51f22"
+  } ]
+}

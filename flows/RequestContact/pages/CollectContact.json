@@ -1,0 +1,36 @@
+{
+  "name": "0babc718-ca97-41f9-8f2a-7f1d63a217a1",
+  "displayName": "CollectContact",
+  "form": {
+    "parameters": [ {
+      "displayName": "contactmethod",
+      "required": true,
+      "entityType": "@contactmethod",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Por favor, me informe por qual canal de atendimento deseja que entremos em contato?\n- WhatsApp\n- Telefone\n- E-mail" ]
+            },
+            "languageCode": "pt-br"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.contactmethod = Telefone OR $session.params.contactmethod = WhatsApp",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "CollectPhoneNumber",
+    "name": "4df176dc-7967-4869-b753-4a30e4edb148"
+  }, {
+    "condition": "$session.params.contactmethod = E-mail",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "CollectEmail",
+    "name": "1cd179e6-88b1-449f-a9f7-4c327cc2d719"
+  } ]
+}

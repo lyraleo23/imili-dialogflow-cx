@@ -1,0 +1,19 @@
+{
+  "name": "f78d4dee-d822-4cce-a0f1-8a241857a8ef",
+  "displayName": "CheckoutSuccessful",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "gcloud_webhook_default",
+    "tag": "checkout-success"
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "aa4da518-57ce-4f71-bb1b-de0ee0a53358"
+  } ]
+}

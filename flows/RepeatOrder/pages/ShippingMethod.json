@@ -1,0 +1,30 @@
+{
+  "name": "27356a22-5959-493e-849e-8da5bd12b79b",
+  "displayName": "ShippingMethod",
+  "form": {
+    "parameters": [ {
+      "displayName": "shippingmethod",
+      "required": true,
+      "entityType": "@shippingmethod",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Por favor, selecione uma das transportadoras." ]
+            },
+            "languageCode": "pt-br"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+      "webhook": "gcloud_webhook_draft",
+      "tag": "order-confirmation"
+    },
+    "targetPage": "OrderConfirmation",
+    "name": "114747b5-0f8d-4e65-9dd2-36c264b8309e"
+  } ]
+}

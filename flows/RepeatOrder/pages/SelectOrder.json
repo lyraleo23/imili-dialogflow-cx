@@ -1,0 +1,62 @@
+{
+  "name": "a6e3b68c-3974-4682-a110-2f3f52a23500",
+  "displayName": "SelectOrder",
+  "form": {
+    "parameters": [ {
+      "displayName": "ordernumber",
+      "required": true,
+      "entityType": "@ordernumber",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "ordernumber",
+      "value": null
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "cs.restart",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, vamos recomeçar!" ]
+        },
+        "languageCode": "pt-br"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "cpf",
+        "value": null
+      }, {
+        "parameter": "ordernumber",
+        "value": null
+      } ]
+    },
+    "targetPage": "END_FLOW_WITH_CANCELLATION",
+    "name": "bc0db8b5-1817-4d76-98bc-a9c966aac793"
+  }, {
+    "condition": "$page.params.status = FINAL AND $page.params.ordernumber != null",
+    "triggerFulfillment": {
+      "webhook": "gcloud_webhook_draft",
+      "tag": "select-order"
+    },
+    "targetPage": "RepetitionOrderConfirmation",
+    "name": "11886c4f-33ac-4215-8040-d1e2c002cd5e"
+  }, {
+    "condition": "$session.params.cpf = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Não encontrei nenhum pedido com este CPF.\nPor favor, me informe outro CPF." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "targetPage": "CollectCPF",
+    "name": "a7eed7a4-4a7e-42e7-983c-30caaaa21620"
+  } ]
+}

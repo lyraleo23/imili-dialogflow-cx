@@ -1,0 +1,69 @@
+{
+  "name": "1cae1433-ac55-47ba-92ee-89c42fb39ace",
+  "displayName": "CollectZipCode",
+  "form": {
+    "parameters": [ {
+      "displayName": "zipcode",
+      "required": true,
+      "entityType": "@zipcode-br",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "CEP inválido. Por favor tente novamente." ]
+            },
+            "languageCode": "pt-br"
+          } ]
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Por favor me informe o seu CEP." ]
+      },
+      "languageCode": "pt-br"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "address_street",
+      "value": null
+    }, {
+      "parameter": "address_number",
+      "value": null
+    }, {
+      "parameter": "address_neighborhood",
+      "value": null
+    }, {
+      "parameter": "address_city",
+      "value": null
+    }, {
+      "parameter": "address_state",
+      "value": null
+    }, {
+      "parameter": "address_id",
+      "value": null
+    }, {
+      "parameter": "address_label",
+      "value": null
+    }, {
+      "parameter": "address_adressee",
+      "value": null
+    }, {
+      "parameter": "address_contact",
+      "value": null
+    }, {
+      "parameter": "address_additional_info",
+      "value": null
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL AND $page.params.zipcode != null",
+    "triggerFulfillment": {
+      "webhook": "gcloud_webhook_draft",
+      "tag": "validade-zipcode"
+    },
+    "targetPage": "CollectAddressFields",
+    "name": "2cde0fc8-a6ef-49df-abd1-e3273082f6a0"
+  } ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "d2236eaf-c40e-421d-8184-a006e2c58bfe",
+  "displayName": "SelectProductConfirmation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Vamos adicionar $session.params.quantity unidades de $session.params.productname.\nConfirma?" ]
+      },
+      "languageCode": "pt-br"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+      "webhook": "gcloud_webhook_default",
+      "tag": "product-confirmation-successful"
+    },
+    "targetPage": "ProductAdded",
+    "name": "ecfc7d3c-8a32-4a57-acbd-771c4a4c3652"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "ProductNotAdded",
+    "name": "d7f2403b-8204-4747-80e3-907e7102dd94"
+  } ]
+}

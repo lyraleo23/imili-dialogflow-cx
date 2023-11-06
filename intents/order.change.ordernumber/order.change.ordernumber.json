@@ -1,0 +1,10 @@
+{
+  "name": "5195c1e9-573c-43d5-a937-4e7071db96c8",
+  "displayName": "order.change.ordernumber",
+  "parameters": [ {
+    "id": "ordernumber",
+    "entityType": "@ordernumber"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 6
+}

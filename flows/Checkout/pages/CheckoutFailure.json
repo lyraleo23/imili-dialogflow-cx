@@ -1,0 +1,20 @@
+{
+  "name": "4fd38c5c-697c-4d3b-a248-26031a034bf1",
+  "displayName": "CheckoutFailure",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pedido cancelado!\nQuando quiser recomeçar, é só me chamar.\n\nAté logo!" ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "ea1f9cab-f9f7-4418-b1fa-bf6b000b6f1a"
+  } ]
+}

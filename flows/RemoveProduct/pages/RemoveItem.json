@@ -1,0 +1,57 @@
+{
+  "name": "e5793478-855c-49f2-b7ce-72ba902c6085",
+  "displayName": "RemoveItem",
+  "form": {
+    "parameters": [ {
+      "displayName": "itemnumber",
+      "required": true,
+      "entityType": "@sys.number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Qual o número do item que deseja remover?" ]
+            },
+            "languageCode": "pt-br"
+          } ],
+          "webhook": "gcloud_webhook_draft",
+          "tag": "remove-product-inquiry"
+        }
+      }
+    }, {
+      "displayName": "itemquantity",
+      "required": true,
+      "entityType": "@sys.number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "E quantas unidades?" ]
+            },
+            "languageCode": "pt-br"
+          } ],
+          "webhook": "gcloud_webhook_draft",
+          "tag": "remove-product-quantity"
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "cs.restart",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "RemoveFailure",
+    "name": "85586b06-dc70-43bc-b72f-0dce538c72fb"
+  }, {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "ItemRemoveConfirmation",
+    "name": "9f11e8dd-c5ae-421b-971a-ebadd42089e2"
+  } ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "aa4aa942-1536-4cf1-a618-ceaae21cc0fa",
+  "displayName": "RemoveSuccess",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "gcloud_webhook_draft",
+    "tag": "remove-product-success"
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "itemnumber",
+        "value": null
+      }, {
+        "parameter": "itemquantity",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "bd8bfd56-0968-4c23-b702-0c6168b2d3ce"
+  }, {
+    "condition": "$page.params.fail = true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "775ebb93-6c4a-441f-a575-ce6e019edc8c"
+  } ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "ef06fbdf-0e36-41d0-88fa-c591225749cc",
+  "displayName": "CheckoutConfirmation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "gcloud_webhook_default",
+    "tag": "checkout-confirmation"
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "CheckoutSuccessful",
+    "name": "03879d00-2767-44d2-a3c1-215bf290dcf0"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "CheckoutFailure",
+    "name": "4f4cd2a4-f039-4eef-8975-3dab0ecea90c"
+  } ]
+}

@@ -1,0 +1,65 @@
+{
+  "name": "4a356cde-262c-4e34-831a-5ab8e3431ec3",
+  "displayName": "SelectProductOption",
+  "form": {
+    "parameters": [ {
+      "displayName": "itemnumber",
+      "required": true,
+      "entityType": "@sys.number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "*Digite o número do produto que deseja:*" ]
+            },
+            "languageCode": "pt-br"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "cs.restart",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, sem problemas!\nVamos tentar novamente? Me diga o nome do produto deseja." ]
+        },
+        "languageCode": "pt-br"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "search_term",
+        "value": null
+      }, {
+        "parameter": "itemnumber",
+        "value": null
+      } ]
+    },
+    "targetPage": "END_FLOW_WITH_FAILURE",
+    "name": "f2faff9d-a3f8-4ff4-ae01-701e8d70bfe4"
+  }, {
+    "condition": "$session.params.product_options = null OR $session.params.product_options = []",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Não consegui encontrar nenhum produto. Por favor, me diga novamente o produto que deseja." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "targetPage": "ProductInquiry",
+    "name": "9c5dbffc-6598-4d1e-98b5-03a9cd00a608"
+  }, {
+    "condition": "$page.params.status = FINAL AND $page.params.itemnumber != null",
+    "triggerFulfillment": {
+      "webhook": "gcloud_webhook_default",
+      "tag": "validate-number-choice",
+      "setParameterActions": [ {
+        "parameter": "search_term",
+        "value": null
+      } ]
+    },
+    "targetPage": "SelectProductQuantity",
+    "name": "abfada6d-4cff-4d2b-bfa0-fae958d73317"
+  } ]
+}

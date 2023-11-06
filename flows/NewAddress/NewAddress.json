@@ -1,0 +1,60 @@
+{
+  "name": "af01e806-deae-40bb-a8a1-2833cc134804",
+  "displayName": "NewAddress",
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "zipcode",
+        "value": null
+      }, {
+        "parameter": "address-street",
+        "value": null
+      }, {
+        "parameter": "address-neighborhood",
+        "value": null
+      }, {
+        "parameter": "address-city",
+        "value": null
+      }, {
+        "parameter": "address-state",
+        "value": null
+      }, {
+        "parameter": "address-number",
+        "value": null
+      }, {
+        "parameter": "address-additionalinfo",
+        "value": null
+      } ]
+    },
+    "targetPage": "CollectZipCode",
+    "name": "dd977371-518d-4ce2-8b22-aa4fac1c673f"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "1fb2db12-715e-45ab-9d57-c044fee01341"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "8cb28ce6-196f-479a-b92d-846103848c5a"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}

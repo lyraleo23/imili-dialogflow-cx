@@ -1,0 +1,57 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "o que vocês tem para "
+    }, {
+      "text": "emagrecer",
+      "parameterId": "goals"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "tenho problema de "
+    }, {
+      "text": "queda de cabelo",
+      "parameterId": "goals"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "tem algo para melhorar o "
+    }, {
+      "text": "desempenho físico",
+      "parameterId": "goals"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "preciso de algo "
+    }, {
+      "text": "para",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "memória",
+      "parameterId": "goals"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "quero um produto para "
+    }, {
+      "text": "emagrecer",
+      "parameterId": "goals"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  } ]
+}

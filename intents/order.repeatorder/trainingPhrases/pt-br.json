@@ -1,0 +1,162 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "quero repetir ",
+      "auto": true
+    }, {
+      "text": "um",
+      "auto": true
+    }, {
+      "text": " pedido",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "repetir ",
+      "auto": true
+    }, {
+      "text": "um",
+      "auto": true
+    }, {
+      "text": " pedido",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "quero fazer ",
+      "auto": true
+    }, {
+      "text": "uma",
+      "auto": true
+    }, {
+      "text": " recompra",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "quero fazer ",
+      "auto": true
+    }, {
+      "text": "um",
+      "auto": true
+    }, {
+      "text": " pedido de repetição",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "Olá",
+      "auto": true
+    }, {
+      "text": ", tudo ",
+      "auto": true
+    }, {
+      "text": "bem",
+      "auto": true
+    }, {
+      "text": "? Eu gostaria de realizar ",
+      "auto": true
+    }, {
+      "text": "um",
+      "auto": true
+    }, {
+      "text": " pedido de repetição ",
+      "auto": true
+    }, {
+      "text": "do",
+      "auto": true
+    }, {
+      "text": " meu produto manipulado ",
+      "auto": true
+    }, {
+      "text": "por",
+      "auto": true
+    }, {
+      "text": " gentileza.",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "preciso novamente da minha fórmula",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "fazer novamente o meu pedido",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "repetir fórmula",
+      "auto": true
+    } ],
+    "repeatCount": 2,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "fazer ",
+      "auto": true
+    }, {
+      "text": "uma",
+      "auto": true
+    }, {
+      "text": " repetição ",
+      "auto": true
+    }, {
+      "text": "do",
+      "auto": true
+    }, {
+      "text": " meu pedido",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "Repetir ",
+      "auto": true
+    }, {
+      "text": "um",
+      "auto": true
+    }, {
+      "text": " pedido",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "repetir pedido",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "Quero repetir ",
+      "auto": true
+    }, {
+      "text": "um",
+      "auto": true
+    }, {
+      "text": " pedido já feito",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  } ]
+}

@@ -1,0 +1,58 @@
+{
+  "name": "c7c2bcc9-b577-4726-880f-e0e0ea62a0fc",
+  "displayName": "CollectCPF",
+  "form": {
+    "parameters": [ {
+      "displayName": "cpf",
+      "required": true,
+      "entityType": "@cpf",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Por favor, informe um CPF válido." ]
+            },
+            "languageCode": "pt-br"
+          } ]
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Para que eu possa encontrar seus pedidos para repetição,  é necessário que me informe o *número do seu CPF*.", "Para que eu possa localizar o seu histórico de compra me informe o *número do seu CPF*.", "Para seguirmos com a sua repetição, me informe o *número do seu CPF*." ]
+      },
+      "languageCode": "pt-br"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "cpf",
+      "value": null
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "cs.restart",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, vamos recomeçar!" ]
+        },
+        "languageCode": "pt-br"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "cpf",
+        "value": null
+      } ]
+    },
+    "targetPage": "END_FLOW_WITH_CANCELLATION",
+    "name": "a972fc43-0e08-4979-a5a3-46b9f076b7eb"
+  }, {
+    "condition": "$page.params.status = FINAL AND $page.params.cpf != null",
+    "triggerFulfillment": {
+      "webhook": "gcloud_webhook_draft",
+      "tag": "validate-cpf"
+    },
+    "targetPage": "SelectOrder",
+    "name": "7e08ab55-53a3-49d1-9600-9ec719701f90"
+  } ]
+}

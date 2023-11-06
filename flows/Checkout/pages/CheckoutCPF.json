@@ -1,0 +1,44 @@
+{
+  "name": "1ad257e8-81f4-492b-be88-1f2783f508ad",
+  "displayName": "CheckoutCPF",
+  "form": {
+    "parameters": [ {
+      "displayName": "cpf",
+      "required": true,
+      "entityType": "@cpf",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Por favor, me informe o seu CPF." ]
+            },
+            "languageCode": "pt-br"
+          } ]
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Para finalizarmos o seu pedido, vou precisar de alguns dados. Vamos começar pelo seu CPF." ]
+      },
+      "languageCode": "pt-br"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.cpf = null OR $session.params.customerid = null",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "CustomerData",
+    "name": "473ceb1c-a2f2-41e2-b9ba-d3d3cc3b637c"
+  }, {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "CheckoutAddress",
+    "name": "59577997-2777-438a-80c6-a92a32f4beb6"
+  } ]
+}

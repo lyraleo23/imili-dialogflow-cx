@@ -1,0 +1,29 @@
+{
+  "name": "d343d0dc-aab4-4933-9419-391135398410",
+  "displayName": "OrderConfirmation",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "OrderSuccess",
+    "name": "18b01ae6-e54f-4630-a644-7a7068123529"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "OrderFailure",
+    "name": "4bd451d3-8c37-443f-83c3-daa61278e372"
+  }, {
+    "condition": "$session.params.shippingmethod = null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "ShippingMethod",
+    "name": "3feca90a-14ff-4bbb-af96-c72ac263baf7"
+  } ]
+}

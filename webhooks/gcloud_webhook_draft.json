@@ -1,0 +1,10 @@
+{
+  "name": "22a8a99c-f438-444e-9166-34e15318e138",
+  "displayName": "gcloud_webhook_draft",
+  "genericWebService": {
+    "uri": "https://server-dialogflow-cx-ow534bbinq-rj.a.run.app/dialogflow-cx/validateparameter/webhook"
+  },
+  "timeout": {
+    "seconds": 30
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "da11289e-88ca-4290-a221-3a348b836e5b",
+  "displayName": "AssistOptions",
+  "form": {
+    "parameters": [ {
+      "displayName": "goals",
+      "required": true,
+      "entityType": "@goals",
+      "isList": true,
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Anotado. Podemos seguir ou deseja me informar mais algum objetivo?" ]
+            },
+            "languageCode": "pt-br"
+          } ]
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Me conte os seus objetivos que vou te ajudar a escolher o melhor produto para você." ]
+      },
+      "languageCode": "pt-br"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "AddProduct",
+    "name": "add259ec-ffd0-458f-aaa3-f384046cc09f"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "AssistOptions",
+    "name": "990a879c-9664-43ab-b3ba-ede66126c904"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, não entendi... \nOs objetivos que posso te ajudar são:\n- Energia\n- Memória\n- Foco\n- Stress\n- Emagrecimento\n- Imunidade\n- Saúde Intestinal\n- Desempenho físico\n- Libido\n- Cabelo\n- Pele\n- Nutrição\n- Barba" ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "96c44874-e54e-4124-b3bb-ad8898f27ec3"
+  } ]
+}

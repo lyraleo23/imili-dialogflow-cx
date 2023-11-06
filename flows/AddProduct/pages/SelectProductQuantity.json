@@ -1,0 +1,59 @@
+{
+  "name": "835e95ba-17cd-4c67-b0f5-48a51992812b",
+  "displayName": "SelectProductQuantity",
+  "form": {
+    "parameters": [ {
+      "displayName": "quantity",
+      "required": true,
+      "entityType": "@sys.number-integer",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Quantas unidades do $session.params.productname?", "E serão quantas unidades?", "Deseja quantas unidades de $session.params.productname?" ]
+            },
+            "languageCode": "pt-br"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "cs.restart",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, sem problemas!\r\nVamos tentar novamente? Me diga o nome do produto deseja." ]
+        },
+        "languageCode": "pt-br"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "search_term",
+        "value": null
+      }, {
+        "parameter": "itemnumber",
+        "value": null
+      }, {
+        "parameter": "quantity",
+        "value": null
+      } ]
+    },
+    "targetPage": "END_FLOW_WITH_FAILURE",
+    "name": "bbcc1eea-ec69-4972-8fe1-f5cf8e3a8420"
+  }, {
+    "condition": "$session.params.itemnumber = null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SelectProductOption",
+    "name": "80cf9202-83d3-44a8-a454-8b572dfb378f"
+  }, {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+      "webhook": "gcloud_webhook_default",
+      "tag": "product-confirmation"
+    },
+    "targetPage": "SelectProductConfirmation",
+    "name": "54ce2c8a-0280-4be3-ab64-7fb42accb12f"
+  } ]
+}

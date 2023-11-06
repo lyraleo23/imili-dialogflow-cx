@@ -1,0 +1,39 @@
+{
+  "name": "cb64c153-f762-449a-826b-221fed9748a6",
+  "displayName": "NewRepeatOrder",
+  "transitionRoutes": [ {
+    "intent": "order.repeatorder",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "RepeatOrderCPF",
+    "name": "e52e6bc7-6124-437d-9b43-b529d8954b87"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "ea2c9d0a-a8d1-4e38-9e0f-ab2e4c4e5382"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "fc1a9285-38ad-45ae-aebe-4fe7ae586d71"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}

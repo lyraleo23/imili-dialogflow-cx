@@ -1,0 +1,10 @@
+{
+  "name": "5dc3a999-d438-4ee9-9b4c-692e5dfe48ea",
+  "displayName": "order.place.product.goals",
+  "parameters": [ {
+    "id": "goals",
+    "entityType": "@goals"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 5
+}

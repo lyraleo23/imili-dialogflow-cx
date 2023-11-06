@@ -1,0 +1,22 @@
+{
+  "name": "1bc1b539-a886-4282-af81-6c540db4085c",
+  "displayName": "CheckoutShipping",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.shippingmethod = null OR $session.params.shippingquote = null",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "SelectShippingMethod",
+    "name": "43806066-5f06-488b-a643-afec452be205"
+  }, {
+    "condition": "$session.params.shippingmethod != null AND $session.params.shippingquote != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "CheckoutConfirmation",
+    "name": "acf281fa-8c5c-4215-9b27-0e474944de7f"
+  } ]
+}

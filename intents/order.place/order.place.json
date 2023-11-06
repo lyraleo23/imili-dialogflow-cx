@@ -1,0 +1,13 @@
+{
+  "name": "81498d59-3dfe-4e26-baf1-bc2acab6995d",
+  "displayName": "order.place",
+  "parameters": [ {
+    "id": "product",
+    "entityType": "@product"
+  }, {
+    "id": "language",
+    "entityType": "@sys.language"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 13
+}

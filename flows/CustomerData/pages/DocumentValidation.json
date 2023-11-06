@@ -1,0 +1,29 @@
+{
+  "name": "85f0f7e0-672e-416f-8b59-1436c2346223",
+  "displayName": "DocumentValidation",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.cpf = null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "CustomerDocument",
+    "name": "265905cc-3f93-4b54-9f5e-208a9358b1ba"
+  }, {
+    "condition": "$session.params.cpf != null AND $session.params.customerId != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "b830d87f-a60a-4dcb-8540-103a320c5363"
+  }, {
+    "condition": "$session.params.cpf != null AND $session.params.customerId = null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "CustomerBasicInformation",
+    "name": "99915bab-8bdb-4951-b67d-d242aaae7858"
+  } ]
+}

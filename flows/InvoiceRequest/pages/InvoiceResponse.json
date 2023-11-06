@@ -1,0 +1,27 @@
+{
+  "name": "b082e494-ec3d-4598-a653-5760a4be36db",
+  "displayName": "InvoiceResponse",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.cpf = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Por favor, me informe um número de CPF válido." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "targetPage": "InvoiceCPF",
+    "name": "ddcecdab-82d1-4035-aff4-1a0fe999c80c"
+  }, {
+    "condition": "$session.params.status = FINAL OR $session.params.cpf != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "4dee4d89-e01d-4fee-b05a-c89cbb71010b"
+  } ]
+}

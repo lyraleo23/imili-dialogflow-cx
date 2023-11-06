@@ -1,0 +1,29 @@
+{
+  "name": "1d7cf08b-4280-42a6-869a-ee312a9827b9",
+  "displayName": "CartMain",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "order.place.product.add",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "AddProduct",
+    "name": "4e877cf6-9b0f-4446-b211-3960e23bf588"
+  }, {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Checkout",
+    "name": "44a618e3-f461-46e5-a878-104b2664d366"
+  }, {
+    "intent": "order.change.removeproduct",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "RemoveProduct",
+    "name": "6edb778d-37f4-4819-87de-8c8a75b80265"
+  } ]
+}

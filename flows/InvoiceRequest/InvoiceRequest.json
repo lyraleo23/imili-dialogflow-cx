@@ -1,0 +1,39 @@
+{
+  "name": "89bc8fb1-de43-4805-a0e8-85bdbeaab0ff",
+  "displayName": "InvoiceRequest",
+  "transitionRoutes": [ {
+    "intent": "cs.invoice",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "InvoiceCPF",
+    "name": "6adce4a4-e8e6-4fb7-af81-646cd70a87f9"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "4abc4b7a-f2f4-41da-96d5-5016efa59d71"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "ccf4abba-0755-46a2-b5c7-532fa031e82e"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}

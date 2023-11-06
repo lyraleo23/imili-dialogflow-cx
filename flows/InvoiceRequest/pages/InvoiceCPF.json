@@ -1,0 +1,45 @@
+{
+  "name": "5ca4d535-dcea-4879-82c9-0f0dcbf480f1",
+  "displayName": "InvoiceCPF",
+  "form": {
+    "parameters": [ {
+      "displayName": "cpf",
+      "required": true,
+      "entityType": "@cpf",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Por favor, me informe um número de CPF válido." ]
+            },
+            "languageCode": "pt-br"
+          } ]
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Para que eu possa buscar as suas notas fiscais, vou precisar que me informe o seu *CPF*.", "Por favor, para que eu possa buscar as suas notas fiscais, me informe o seu *CPF*." ]
+      },
+      "languageCode": "pt-br"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "cs.restart",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "END_FLOW_WITH_FAILURE",
+    "name": "29d154a1-4ac2-4b5d-a790-77876cc0a8a7"
+  }, {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+      "webhook": "gcloud_webhook_draft",
+      "tag": "validate-cpf-invoice"
+    },
+    "targetPage": "InvoiceResponse",
+    "name": "807789a7-3899-439a-8246-cd8d50608f8f"
+  } ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "ab960caf-6d3e-4cb2-9c31-cc278ac1a4e0",
+  "displayName": "RepeatOrderCPF",
+  "form": {
+    "parameters": [ {
+      "displayName": "cpf",
+      "required": true,
+      "entityType": "@cpf",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Por favor, informe um CPF válido." ]
+            },
+            "languageCode": "pt-br"
+          } ]
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Para que eu possa encontrar seus pedidos para repetição,  é necessário que me informe o *número do seu CPF*.", "Para que eu possa localizar o seu histórico de compra me informe o *número do seu CPF*.", "Para seguirmos com a sua repetição, me informe o *número do seu CPF*." ]
+      },
+      "languageCode": "pt-br"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "cs.restart",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "END_FLOW_WITH_CANCELLATION",
+    "name": "86b9e49d-a04d-41cb-87a5-3337e86bb6b6"
+  }, {
+    "condition": "$page.params.status = FINAL AND $page.params.cpf != null",
+    "triggerFulfillment": {
+      "webhook": "gcloud_webhook_default",
+      "tag": "validate-cpf"
+    },
+    "targetPage": "SelectRepetitionOrder",
+    "name": "d20a18c5-fcfb-4c13-a847-705a855fd274"
+  } ]
+}

@@ -1,0 +1,121 @@
+{
+  "name": "609030d1-55f9-4b44-b3a6-ab95d884ec8c",
+  "displayName": "CheckoutAddress",
+  "form": {
+    "parameters": [ {
+      "displayName": "zipcode",
+      "required": true,
+      "entityType": "@zipcode-br",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    }, {
+      "displayName": "address_street",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    }, {
+      "displayName": "address_number",
+      "required": true,
+      "entityType": "@sys.number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    }, {
+      "displayName": "address_additional_info",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    }, {
+      "displayName": "address_neighborhood",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    }, {
+      "displayName": "address_city",
+      "required": true,
+      "entityType": "@sys.geo-city",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    }, {
+      "displayName": "address_state",
+      "required": true,
+      "entityType": "@sys.geo-state",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "condition": "$session.params.zipcode != null OR $session.params.address_street != null OR $session.params.address_number != null OR $session.params.address_neighborhood != null OR $session.params.address_additional_info != null OR $session.params.address_city != null OR $session.params.address_state != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "CheckoutShipping",
+    "name": "119ad60d-49ed-434e-a48a-6eabb001cd51"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "zipcode",
+        "value": null
+      }, {
+        "parameter": "address_street",
+        "value": null
+      }, {
+        "parameter": "address_number",
+        "value": null
+      }, {
+        "parameter": "address_neighborhood",
+        "value": null
+      }, {
+        "parameter": "address_additional_info",
+        "value": null
+      }, {
+        "parameter": "address_city",
+        "value": null
+      }, {
+        "parameter": "address_state",
+        "value": null
+      } ]
+    },
+    "targetFlow": "NewAddress",
+    "name": "d6b41dbd-d7f5-480c-95d6-86a5e3188f10"
+  }, {
+    "condition": "$session.params.zipcode = null OR $session.params.address_street = null OR $session.params.address_number = null OR $session.params.address_neighborhood = null OR $session.params.address_additional_info = null OR $session.params.address_city = null OR $session.params.address_state = null",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "NewAddress",
+    "name": "f725624d-b689-4401-b5cb-531cfce02fa2"
+  }, {
+    "condition": "$session.params.zipcode != null AND $session.params.address_street != null AND $session.params.address_number != null AND $session.params.address_neighborhood != null AND $session.params.address_additional_info != null AND $session.params.address_city != null AND $session.params.address_state != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "CheckoutShipping",
+    "name": "9cde6bcc-dd48-456e-a78e-3573cbea3f32"
+  } ]
+}

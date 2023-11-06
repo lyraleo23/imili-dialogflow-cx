@@ -1,0 +1,39 @@
+{
+  "name": "6fa6f81d-f244-4cc1-b986-f691877c859e",
+  "displayName": "ShippingConfirmation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "gcloud_webhook_default",
+    "tag": "shipping-confirmation"
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "9e97fd3f-9a13-4e56-9655-93e014a4e9a5"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "shippingmethod",
+        "value": null
+      }, {
+        "parameter": "shippingquote",
+        "value": null
+      } ]
+    },
+    "targetPage": "ShippingOptions",
+    "name": "954bef4c-b19c-4c76-b896-a18c6d63a941"
+  }, {
+    "condition": "$session.params.shippingmethod = null AND $session.params.shippingquote = null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "ShippingOptions",
+    "name": "b893fb65-d96c-415f-aaa2-5f6ca91bbad9"
+  } ]
+}

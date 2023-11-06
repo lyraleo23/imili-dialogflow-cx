@@ -1,0 +1,32 @@
+{
+  "name": "b91127be-c5ee-4357-9612-e9bab23a2025",
+  "displayName": "ItemRemoveConfirmation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Então vamos remover $session.params.itemnumber unidades de $session.params.itemname\nConfirma?" ]
+      },
+      "languageCode": "pt-br"
+    } ],
+    "webhook": "gcloud_webhook_draft",
+    "tag": "remove-product-validation"
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "RemoveSuccess",
+    "name": "8ab16c7d-68a2-4edc-9843-68ccdfb1b4f8"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "RemoveFailure",
+    "name": "4ebbdde7-66ee-408a-a8ff-7f7eb7c75d96"
+  } ]
+}

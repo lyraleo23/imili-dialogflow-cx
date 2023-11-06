@@ -1,0 +1,50 @@
+{
+  "name": "0b07762b-2d12-49d2-b283-9bb2ea6e69bc",
+  "displayName": "TrackingCPF",
+  "form": {
+    "parameters": [ {
+      "displayName": "cpf",
+      "required": true,
+      "entityType": "@cpf",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Por favor me informe um CPF válido." ]
+            },
+            "languageCode": "pt-br"
+          } ]
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Para poder rastrear os seus pedidos, vou precisar que me informe o *número do seu CPF* .", "Por favor, me informe o *número do seu CPF* para que eu possa rastrear os seus pedidos." ]
+      },
+      "languageCode": "pt-br"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "cs.restart",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, vamos recomeçar!" ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "targetPage": "END_FLOW_WITH_FAILURE",
+    "name": "fecf289c-1fbe-4b13-8851-c5c9fd721aab"
+  }, {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+      "webhook": "gcloud_webhook_draft",
+      "tag": "validate-cpf-tracking"
+    },
+    "targetPage": "TrackingResponse",
+    "name": "24be06f8-d534-4e8f-b534-9650acf55abe"
+  } ]
+}

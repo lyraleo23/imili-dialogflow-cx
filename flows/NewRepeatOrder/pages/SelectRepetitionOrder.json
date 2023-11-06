@@ -1,0 +1,35 @@
+{
+  "name": "b4645077-fcf1-4437-85c4-de7edf9dbdf0",
+  "displayName": "SelectRepetitionOrder",
+  "form": {
+    "parameters": [ {
+      "displayName": "ordernumber",
+      "required": true,
+      "entityType": "@ordernumber",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "cs.restart",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, vamos recomeçar!" ]
+        },
+        "languageCode": "pt-br"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "cpf",
+        "value": null
+      }, {
+        "parameter": "ordernumber",
+        "value": null
+      } ]
+    },
+    "name": "698c956c-0b8b-41b3-9639-d9f4bdcd47d2"
+  } ]
+}

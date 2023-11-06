@@ -1,0 +1,46 @@
+{
+  "name": "fc004ba7-9977-4498-b33d-dd06f182e5e7",
+  "displayName": "ProductAssist",
+  "transitionRoutes": [ {
+    "intent": "order.place.product.goals",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "AssistOptions",
+    "name": "c8fc4f77-b87e-4f70-832a-c88935a852b0"
+  }, {
+    "intent": "order.place.product.assist",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "AssistOptions",
+    "name": "d2387fd4-f4b7-4c2e-9cec-a82b5eb63de6"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "7b5d3c60-7869-4c8a-ace1-8ca7cdb4e3b5"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "cd08b1ca-cd3b-4413-a544-0175368b32f6"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}

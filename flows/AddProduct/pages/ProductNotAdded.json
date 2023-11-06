@@ -1,0 +1,50 @@
+{
+  "name": "42cb78b0-75ae-40d4-ab1c-f0bd6af24687",
+  "displayName": "ProductNotAdded",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Nesse caso, você deseja seguir adicionando itens ao seu carrinho?" ]
+      },
+      "languageCode": "pt-br"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "itemnumber",
+      "value": null
+    }, {
+      "parameter": "productname",
+      "value": null
+    }, {
+      "parameter": "productrate",
+      "value": null
+    }, {
+      "parameter": "productamount",
+      "value": null
+    }, {
+      "parameter": "quantity",
+      "value": null
+    }, {
+      "parameter": "product_options",
+      "value": null
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "ProductInquiry",
+    "name": "8c1f3c6c-c090-4d40-8287-47b10d8dd0bf"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+      "webhook": "gcloud_webhook_default",
+      "tag": "product-confirmation-failure"
+    },
+    "targetPage": "End Flow",
+    "name": "e875f6db-4bb4-4282-aeb6-ebe4cb732591"
+  } ]
+}

@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "WhatsApp",
+    "synonyms": [ "whats", "whats app", "whatsapp", "WhatsApp", "zap" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Telefone",
+    "synonyms": [ "fone", "ligação", "Telefone" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "E-mail",
+    "synonyms": [ "E-mail", "email", "mail" ],
+    "languageCode": "pt-br"
+  } ]
+}

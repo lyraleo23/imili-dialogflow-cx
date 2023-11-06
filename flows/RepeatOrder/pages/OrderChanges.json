@@ -1,0 +1,50 @@
+{
+  "name": "0142d304-d1b8-43d5-b630-1b2dbd5d70bb",
+  "displayName": "OrderChanges",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Sem problema! Me diga se deseja\n- Trocar o pedido inicial, \n- Remover algum produto do pedido atual\n- Seguir como está" ]
+      },
+      "languageCode": "pt-br"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "order.change.ordernumber",
+    "triggerFulfillment": {
+      "webhook": "gcloud_webhook_draft",
+      "tag": "select-new-order",
+      "setParameterActions": [ {
+        "parameter": "ordernumber",
+        "value": null
+      } ]
+    },
+    "targetPage": "SelectOrder",
+    "name": "7bf223fb-a942-41aa-a54e-1e8399468dc8"
+  }, {
+    "intent": "order.change.removeproduct",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "RemoveProduct",
+    "name": "be979487-b693-456f-998c-9ea15cecd364"
+  }, {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+      "webhook": "gcloud_webhook_draft",
+      "tag": "address-confirmation"
+    },
+    "targetPage": "AddressConfirmation",
+    "name": "05c3bed6-7bca-414a-a5f9-47f8b940a303"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "RemoveProduct",
+    "name": "17261f97-f1ed-4d06-b2a4-2d09bc8e0db8"
+  } ]
+}

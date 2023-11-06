@@ -1,0 +1,36 @@
+{
+  "name": "545bc784-72d5-4a4d-bab8-322875d924e8",
+  "displayName": "AddressFailure",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "zipcode",
+        "value": null
+      }, {
+        "parameter": "address-street",
+        "value": null
+      }, {
+        "parameter": "address-neighborhood",
+        "value": null
+      }, {
+        "parameter": "address-number",
+        "value": null
+      }, {
+        "parameter": "address-additional-info",
+        "value": null
+      }, {
+        "parameter": "address-city",
+        "value": null
+      }, {
+        "parameter": "address-state",
+        "value": null
+      } ]
+    },
+    "targetPage": "CollectZipCode",
+    "name": "fb27abf5-eba1-4e88-a3bc-708b339774c9"
+  } ]
+}

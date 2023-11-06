@@ -1,0 +1,55 @@
+{
+  "entities": [ {
+    "value": "Energia",
+    "synonyms": [ "cansaço", "combater cansaço", "Energia" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Memória",
+    "synonyms": [ "Memória" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Foco",
+    "synonyms": [ "atenção", "Foco" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Stress",
+    "synonyms": [ "nervosismo", "Stress" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Emagrecer",
+    "synonyms": [ "Emagrecer", "emagrecimento" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Imunidade",
+    "synonyms": [ "Imunidade" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Saúde Intestinal",
+    "synonyms": [ "digestão", "Saúde Intestinal" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Desempenho Físico",
+    "synonyms": [ "crescimento muscular", "Desempenho Físico", "exercício físico" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Libido",
+    "synonyms": [ "desempenho sexual", "Libido", "sexo" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Cabelos",
+    "synonyms": [ "Cabelos", "calvície", "careca", "crescimento capilar", "queda capilar", "queda de cabelo" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Pele",
+    "synonyms": [ "manchas", "Pele", "rugas" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Nutrição",
+    "synonyms": [ "Nutrição" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Barba",
+    "synonyms": [ "Barba", "volume de barba" ],
+    "languageCode": "pt-br"
+  } ]
+}

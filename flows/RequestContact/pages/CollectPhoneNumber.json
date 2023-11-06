@@ -1,0 +1,36 @@
+{
+  "name": "65dccc18-abee-43cb-9c6c-5e808b5491be",
+  "displayName": "CollectPhoneNumber",
+  "form": {
+    "parameters": [ {
+      "displayName": "phonenumber",
+      "required": true,
+      "entityType": "@sys.phone-number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "E qual seria o seu $session.params.contactmethod" ]
+            },
+            "languageCode": "pt-br"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Perfeito, um de nossos atendentes entrará em contato via $session.params.contactmethod $session.params.phonenumber", "Ok, registrado! Um de nossos atendentes entrará em contato via $session.params.contactmethod $session.params.phonenumber\n\nAgradeço o seu contato e até breve! 💚" ]
+        },
+        "languageCode": "pt-br"
+      } ],
+      "webhook": "gcloud_webhook_draft",
+      "tag": "contact-request"
+    },
+    "targetPage": "End Session",
+    "name": "4515bf3e-4c96-4873-aabb-b15542de4a74"
+  } ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "d7f8d681-d9ba-45bd-b3af-0595d402aac9",
+  "displayName": "OrderFailure.Failure",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "8f1ce5dd-9e91-4a21-ba28-deeba8d1022b"
+  } ]
+}

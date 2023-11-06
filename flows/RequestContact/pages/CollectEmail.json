@@ -1,0 +1,36 @@
+{
+  "name": "a9e73301-4827-49ce-b25c-929b5340df18",
+  "displayName": "CollectEmail",
+  "form": {
+    "parameters": [ {
+      "displayName": "email",
+      "required": true,
+      "entityType": "@sys.email",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "E qual seria o seu $session.params.contactmethod" ]
+            },
+            "languageCode": "pt-br"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Perfeito, um de nossos atendentes entrará em contato via $session.params.contactmethod $session.params.email\n\nAgradeço o seu contato e até breve! 💚", "Ok, registrado! Um de nossos atendentes entrará em contato via $session.params.contactmethod $session.params.email\n\nAgradeço o seu contato e até breve! 💚" ]
+        },
+        "languageCode": "pt-br"
+      } ],
+      "webhook": "gcloud_webhook_draft",
+      "tag": "contact-request"
+    },
+    "targetPage": "End Session",
+    "name": "d2197a7f-dbef-4812-8bb3-39b03594e3d0"
+  } ]
+}

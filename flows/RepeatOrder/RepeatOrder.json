@@ -1,0 +1,46 @@
+{
+  "name": "2518f722-3315-46df-a01d-ec13b47405aa",
+  "displayName": "RepeatOrder",
+  "transitionRoutes": [ {
+    "intent": "order.repeatorder",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "CollectCPF",
+    "name": "88bd9ce5-11ea-4def-baa0-a7597b2ed431"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "837aa40a-7ce1-4d26-982c-19cde23e77c7"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "ed5d4581-bb3d-4e65-a82b-d6de8d248105"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "multiIntentSettings": {
+    
+    }
+  },
+  "advancedSettings": {
+    "enabled": true
+  }
+}

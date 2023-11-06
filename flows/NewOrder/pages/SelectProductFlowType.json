@@ -1,0 +1,30 @@
+{
+  "name": "718d9df7-576c-4bba-bb48-ffd14be9101b",
+  "displayName": "SelectProductFlowType",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Vamos iniciar a montagem do seu pedido.\n\nIremos adicionar um item de cada vez!\nMe diga o nome do produto deseja.", "Vamos iniciar a montagem do seu pedido.\n\nIremos adicionar um item de cada vez!\nMe diga apenas o nome do produto deseja." ]
+      },
+      "languageCode": "pt-br"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "order.place.product.add",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "AddProduct",
+    "name": "9b94c2d9-88d9-433c-b664-62546a7b8918"
+  }, {
+    "condition": "$session.params.cart != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "CartMain",
+    "name": "7c54c68c-84f0-4810-a99a-263817657dff"
+  } ]
+}

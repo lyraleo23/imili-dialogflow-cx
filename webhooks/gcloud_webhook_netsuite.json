@@ -1,0 +1,10 @@
+{
+  "name": "2b6878bb-202f-4a24-a739-efe70a62d358",
+  "displayName": "gcloud_webhook_netsuite",
+  "genericWebService": {
+    "uri": "https://server-dialogflow-cx-ow534bbinq-rj.a.run.app/dialogflow-cx/webhook/netsuite"
+  },
+  "timeout": {
+    "seconds": 30
+  }
+}

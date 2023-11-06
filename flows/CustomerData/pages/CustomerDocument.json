@@ -1,0 +1,30 @@
+{
+  "name": "0ca7a0ca-dae2-4144-bb62-02625a867bd9",
+  "displayName": "CustomerDocument",
+  "form": {
+    "parameters": [ {
+      "displayName": "cpf",
+      "required": true,
+      "entityType": "@cpf",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Por favor, me informe o seu CPF." ]
+            },
+            "languageCode": "pt-br"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+      "webhook": "gcloud_webhook_default",
+      "tag": "document-validation"
+    },
+    "targetPage": "DocumentValidation",
+    "name": "9080b010-ba0c-4e98-abf7-80845d810d91"
+  } ]
+}

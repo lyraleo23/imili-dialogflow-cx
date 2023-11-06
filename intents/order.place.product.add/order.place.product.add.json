@@ -1,0 +1,10 @@
+{
+  "name": "02372b2d-c799-424a-a014-64ef4418ea33",
+  "displayName": "order.place.product.add",
+  "parameters": [ {
+    "id": "product",
+    "entityType": "@product"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 12
+}

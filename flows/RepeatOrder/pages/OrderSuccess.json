@@ -1,0 +1,19 @@
+{
+  "name": "949541cc-4953-4e18-9c57-cd51fe471360",
+  "displayName": "OrderSuccess",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "gcloud_webhook_draft",
+    "tag": "order-success"
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "cac31f90-aaa7-4198-a368-8301dc09a3a5"
+  } ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "e28a416a-3deb-441c-8517-5933157b0fe3",
+  "displayName": "TrackingResponse",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.cpf = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Por favor, me informe um número de CPF válido." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "targetPage": "TrackingCPF",
+    "name": "75dcd51a-65ed-4c56-8fb6-bc5da0aa5e6b"
+  }, {
+    "condition": "$page.params.status = FINAL AND $session.params.cpf != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "b6fa8172-e857-428c-847b-5abbd281fc55"
+  } ]
+}

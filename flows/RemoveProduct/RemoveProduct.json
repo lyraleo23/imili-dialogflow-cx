@@ -1,0 +1,47 @@
+{
+  "name": "ec0934be-60c4-451f-b482-117dcdd1608a",
+  "displayName": "RemoveProduct",
+  "transitionRoutes": [ {
+    "intent": "order.change.removeproduct",
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "RemoveItem",
+    "name": "94318117-5c54-4d55-859b-fae5dcf610ab"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "RemoveItem",
+    "name": "25a41519-6023-421d-9487-4138d73d0003"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "e32e925d-1ac5-451d-89d7-388b4a018716"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "f88c06f8-af05-41f6-aa18-3bd1a79e12f5"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}

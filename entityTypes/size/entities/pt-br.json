@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "pequeno",
+    "synonyms": [ "pequeno" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "médio",
+    "synonyms": [ "medio", "médio" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "grande",
+    "synonyms": [ "grande" ],
+    "languageCode": "pt-br"
+  } ]
+}

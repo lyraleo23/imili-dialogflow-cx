@@ -1,0 +1,23 @@
+{
+  "name": "077b9847-5390-43bd-b875-53c04e0e9d6a",
+  "displayName": "BuildRepeatOrderCart",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "order.repeatorder",
+    "condition": "$session.params.cart = null",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "NewRepeatOrder",
+    "name": "deceea42-87ba-4e5a-aea6-c34816472c51"
+  }, {
+    "condition": "$session.params.cart != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "CartMain",
+    "name": "0eb65188-f6a6-4f37-8593-de42c8ad6eb0"
+  } ]
+}

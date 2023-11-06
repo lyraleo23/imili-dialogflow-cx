@@ -1,0 +1,30 @@
+{
+  "name": "cb8eaac5-d0e8-487f-9faa-9a93a4f125d1",
+  "displayName": "ProductInquiry",
+  "form": {
+    "parameters": [ {
+      "displayName": "search_term",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Qual o nome do produto que deseja?", "Qual o nome do produto?" ]
+            },
+            "languageCode": "pt-br"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+      "webhook": "gcloud_webhook_default",
+      "tag": "search-product-by-term"
+    },
+    "targetPage": "SelectProductOption",
+    "name": "b192059d-c6ae-42cc-ac64-e45170fba84f"
+  } ]
+}

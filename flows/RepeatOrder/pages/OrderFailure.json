@@ -1,0 +1,85 @@
+{
+  "name": "44d79514-d034-4e62-ac3a-a9e244e1c080",
+  "displayName": "OrderFailure",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Deseja reiniciar a repetição?" ]
+      },
+      "languageCode": "pt-br"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "shippingquote",
+        "value": null
+      }, {
+        "parameter": "cpf",
+        "value": null
+      }, {
+        "parameter": "customerId",
+        "value": null
+      }, {
+        "parameter": "ordernumber",
+        "value": null
+      }, {
+        "parameter": "zipcode",
+        "value": null
+      }, {
+        "parameter": "address_id",
+        "value": null
+      }, {
+        "parameter": "address_street",
+        "value": null
+      }, {
+        "parameter": "address_number",
+        "value": null
+      }, {
+        "parameter": "address_neighborhood",
+        "value": null
+      }, {
+        "parameter": "address_additional_info",
+        "value": null
+      }, {
+        "parameter": "address_city",
+        "value": null
+      }, {
+        "parameter": "address_state",
+        "value": null
+      }, {
+        "parameter": "address_contact",
+        "value": null
+      }, {
+        "parameter": "address_adressee",
+        "value": null
+      }, {
+        "parameter": "address_label",
+        "value": null
+      }, {
+        "parameter": "shippingquote",
+        "value": null
+      }, {
+        "parameter": "shippingmethod",
+        "value": null
+      }, {
+        "parameter": "cart",
+        "value": null
+      } ]
+    },
+    "targetPage": "CollectCPF",
+    "name": "7132c44d-c040-4696-9a70-0d70fe62bf40"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+      "webhook": "gcloud_webhook_draft",
+      "tag": "order-failure"
+    },
+    "targetPage": "OrderFailure.Failure",
+    "name": "b6cd652c-195c-4862-9823-152be742a8dc"
+  } ]
+}

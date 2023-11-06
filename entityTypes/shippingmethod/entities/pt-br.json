@@ -1,0 +1,43 @@
+{
+  "entities": [ {
+    "value": "Correios PAC",
+    "synonyms": [ "correios pac", "PAC" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Correios Sedex",
+    "synonyms": [ "correios sedex", "Sedex" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Total Express",
+    "synonyms": [ "total", "Total Express" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Motoboy",
+    "synonyms": [ "Motoboy" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Retirada na Loja",
+    "synonyms": [ "retirada", "Retirada na loja" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Super Express",
+    "synonyms": [ "Super Express" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Sedex 10",
+    "synonyms": [ "Sedex 10 ", "sedex10" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Sedex 12",
+    "synonyms": [ "Sedex 12", "sedex12" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Diálogo Standard",
+    "synonyms": [ "dialogo", "Diálogo", "Diálogo Standard" ],
+    "languageCode": "pt-br"
+  }, {
+    "value": "Jadlog",
+    "synonyms": [ "Jadlog" ],
+    "languageCode": "pt-br"
+  } ]
+}

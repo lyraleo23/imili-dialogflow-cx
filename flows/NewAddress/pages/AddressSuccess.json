@@ -1,0 +1,23 @@
+{
+  "name": "cd44f3ea-91d8-4e1d-9153-2c8504402d81",
+  "displayName": "AddressSuccess",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Seu endereço ficou:\n$session.params.address_street $session.params.address_number, $session.params.address_additional_info, bairro $session.params.address_neighborhood em $session.params.address_city - $session.params.address_state\n\nCorreto?" ]
+      },
+      "languageCode": "pt-br"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "c42d8db8-ce51-4e34-b912-698a631b30e8"
+  } ]
+}

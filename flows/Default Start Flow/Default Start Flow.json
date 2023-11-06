@@ -1,0 +1,79 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "cs.welcome",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Olá, eu sou o MiliBot, a inteligência artificial da Miligrama. Em nome da Miligrama, agradeço o seu contato!\nComo posso lhe ajudar hoje?\n- Rastrear pedido\n- Repetir um pedido já feito\n- Comprar o *Minoxihard*!\n- Comprar o *Testo Extreme*!\n\n*Este canal é apenas para autoatendimento.*" ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "9f920564-23dd-4130-a83b-f95f9c5c30c0"
+  }, {
+    "intent": "order.repeatorder",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "RepeatOrder",
+    "name": "2d7ffee6-d310-463f-982a-6a1c1d25e5a7"
+  }, {
+    "intent": "order.tracking",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Tracking",
+    "name": "2b9abba6-2f31-438c-a52e-17b49993d62d"
+  }, {
+    "intent": "cs.contact",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "RequestContact",
+    "name": "3f6d8d8e-fcd5-4934-b6a6-7b7db5d93ab2"
+  }, {
+    "intent": "cs.invoice",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "InvoiceRequest",
+    "name": "c250575d-c4cb-4d2d-8097-e3c48d634797"
+  }, {
+    "intent": "order.place",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "NewOrder",
+    "name": "60a5b520-a445-44c3-b3a5-eda6667306c0"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.\n\nPosso te ajudar com uma dessas demandas:\n- Rastrear um pedido\n- Repetir um pedido já feito\n- Comprar o *Minoxihard*!\n- Comprar o *Testo Extreme*!\n\n*Este canal é apenas para autoatendimento.*\nSe desejar orçamentos de receitas ou para falar com um atendente, nos chame no WhatsApp (41) 99234-8480 ou pelo link https://api.whatsapp.com/send?phone=554192348480", "Desculpe, mas não compreendi.\n\nNeste canal posso te ajudar com uma dessas demandas:\n- Rastrear um pedido\n- Repetir um pedido já feito\n- Comprar o *Minoxihard*!\n- Comprar o *Testo Extreme*!\n\n*Este canal é apenas para autoatendimento.*\nSe desejar orçamentos de receitas ou para falar com um atendente, nos chame no WhatsApp (41) 99234-8480 ou pelo link https://api.whatsapp.com/send?phone=554192348480", "Infelizmente, não captei o que deseja.\n\nNeste canal posso te ajudar com uma dessas demandas:\n- Rastrear um pedido\n- Repetir um pedido já feito\n- Comprar o *Minoxihard*!\n- Comprar o *Testo Extreme*!\n\n*Este canal é apenas para autoatendimento.*\nSe desejar orçamentos de receitas ou para falar com um atendente, nos chame no WhatsApp (41) 99234-8480 ou pelo link https://api.whatsapp.com/send?phone=554192348480", "Não consegui compreender, desculpe.\n\nNeste canal posso te ajudar com uma dessas demandas:\n- Rastrear um pedido\n- Repetir um pedido já feito\n- Comprar o *Minoxihard*!\n- Comprar o *Testo Extreme*!\n\n*Este canal é apenas para autoatendimento.*\nSe desejar orçamentos de receitas ou para falar com um atendente, nos chame no WhatsApp (41) 99234-8480 ou pelo link https://api.whatsapp.com/send?phone=554192348480" ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "618f992b-984f-46d5-bc06-a79e225ba650"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "be95bea3-2d79-4827-b135-4a5d5e1b8e94"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "f5db87e0-efa8-4b22-aad9-78bb5a84cfa9",
+  "displayName": "Tracking",
+  "transitionRoutes": [ {
+    "intent": "order.tracking",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "TrackingCPF",
+    "name": "5b72e924-da03-492b-9caa-20b495fdf015"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "0e8d5bbe-04ba-450a-bd73-3b0a74bfb044"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "eb6aeb1a-2f47-4210-afd3-5d8ed7530935"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}
